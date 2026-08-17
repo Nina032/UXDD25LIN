@@ -1,0 +1,24 @@
+.hamburger-menu{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.hamburger-menu .bar {
+    height: 5px;
+    background: orange;
+    margin: 3px 0px;
+    border-radius: 5px;
+    transform-origin: left;
+    transition: all 0.3s;
+}
+.hamburger-menu:hover .top {
+    transform: rotate(45deg);
+}
+.hamburger-menu:hover .middle {
+    opacity: 0;
+}
+.hamburger-menu:hover .bottom {
+    transform: rotate(-45deg);
+}
