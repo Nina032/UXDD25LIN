@@ -1,0 +1,10 @@
+span {
+    padding: 0 16px;
+    transition: opacity 0.3s;
+}
+.sibling-fade:hover span:not(:hover) {
+    opacity: 0.5;
+}
+.sibling-fade:hover span {
+    font-weight: bold;
+}
