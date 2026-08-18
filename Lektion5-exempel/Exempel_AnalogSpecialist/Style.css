@@ -24,3 +24,13 @@ ul{
     border-bottom: 1px solid #000;
     text-align: center;
 }
+li {
+    display: inline;
+    margin: 0px 3px;
+}
+p{
+   text-align: center; 
+   width: 600px;
+   margin: 20px auto 20px auto;
+   font-weight: normal;
+}
