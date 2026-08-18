@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    letter-spacing: 0.15em;
+    background-color: #efefef;
+}
+#page{
+    max-width: 940px;
+    min-height: 720px;
+    background-color: #ffffff;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+}
