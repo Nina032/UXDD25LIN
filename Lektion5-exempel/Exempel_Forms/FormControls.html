@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Controls</title>
+    <style>
+        	body {
+				font-family: Arial, Verdana, sans-serif;}
+			div {
+				border-bottom: 1px solid #00000034;
+				margin: 10px;
+				padding-bottom: 10px;
+				width: 300px;}
+			.title {
+				float: left;
+				width: 100px;
+				display:contents;}
+            .submit{
+                text-align: right;
+                border-bottom: none;
+            }
+			#register {
+                border-radius: 15px;
+            }
+			.field{
+				float: right;
+				width: 200px;
+				text-align: right;
+				padding-right: 40px;
+				display:inline;
+			}
+    </style>
+</head>
+<body>
+    <form action="example.php" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="field">
+        </div>
+        <div>
+			<label for="email" class="title">Email:</label>
+			<input type="email" class="field" id="email" name="email" />
+		</div>
+        <div>
+            <span class="title">Gender:</span>
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">M</label>
+
+            <input type="radio" name="gender" id="female" value="F">
+            <label for="male">F</label>
+        </div>
+        <div>
+            <input type="submit" value="Register" id="register">
+        </div>
+    </form>
+</body>
+</html>
