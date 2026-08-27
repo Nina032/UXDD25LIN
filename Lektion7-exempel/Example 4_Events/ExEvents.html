@@ -21,5 +21,15 @@
 </head>
 <body>
     <button type="button">Player 1: Nevena</button>
+
+    <script>
+        const playerButton = document.querySelector("button");
+        playerButton.addEventListener("click", updateName);
+
+        function updateName() {
+            const playerName = prompt("Enter a new name please");
+            playerButton.textContent = "Player 1: " + playerName;
+        }
+    </script>
 </body>
 </html>
