@@ -24,11 +24,14 @@
 
     <script>
         const playerButton = document.querySelector("button");
-        playerButton.addEventListener("click", updateName);
+        playerButton.addEventListener("click", updateNameAndStyle);
 
-        function updateName() {
+        // alert("Scipt körs här - rad 29")
+
+        function updateNameAndStyle() {
             const playerName = prompt("Enter a new name please");
             playerButton.textContent = "Player 1: " + playerName;
+            playerButton.style.color = 'blue';
         }
     </script>
 </body>
