@@ -9,7 +9,24 @@
     <p>Please input a number between 5 and 10:</p>
 
     <input id="demo" type="text">
-    <button type="button" onclick="myFunction()">Test Input</button>
+    <button type="button">Test Input</button>
     <p id="message"></p>
+    <script>
+      function myFunction() {
+        const message = document.getElementById("message");
+        message.innerHTML = "";
+        let x = document.getElementById("demo").value; 
+        try {
+          if(x == "") throw "Empty!";
+          if(isNaN(x)) throw "Not a number!";
+          if(x > 10) throw "Too high!";
+          if(x < 5) throw "Too low"; 
+        } catch (err) {
+          message.innerHTML = "Error: " + err + "."
+        } finally {
+          document.getElementById("demo").value = "";
+        }
+      }
+    </script>
 </body>
 </html>
