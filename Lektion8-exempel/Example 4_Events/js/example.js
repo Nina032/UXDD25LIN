@@ -27,12 +27,21 @@ function recorderControls(e) {
     switch (target.getAttribute('data-state')) {
         case 'record':
             record(target);
+            break; 
+        case 'stop':
+            stop(target);
+            break;
+        //Andra buttons kan vara här...
     }
 
 }
 function record(target) {
     target.setAttribute('data-state','stop');
     target.textContent = 'stop';
+}
+function stop(target) {
+    target.setAttribute('data-state','record');
+    target.textContent = 'record';
 }
 
 //Eventlistener på document
