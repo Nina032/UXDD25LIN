@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Send HTML Form as JSON</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="js/skicka.js"></script>
+</head>
+
+<body>
+<div id="header">
+ Send Form's data as JSON
+</div>
+   
+<form id="myform" type="post">
+  <fieldset>
+    <legend>Form</legend>
+    <p>We would love to hear from you. Please fill out this form</p>
+    <div class="elements">
+      <label for="name">Name :</label>
+      <input  required="required" type="text"   name="fname"  size="20"  />
+    </div>
+	 <div class="elements">
+      <label for="Age">Age :</label>
+      <input required="required" type="number"  id="age" name="age" size="10" />
+    </div>	
+    <div class="elements">
+      <label for="pro"> Profession :</label>
+	  <select name="pro">
+   <option value="Student">Student</option>
+   <option value="Engineer">Engineer</option>
+   </select>
+    </div>  	
+	<div class="elements">
+	<label for="Gender">Gender: </label>
+      <input type="radio" name="gender" value="Male" id="r1"> Male 
+  <input type="radio" name="gender" value="Female" id="r2"> Female 
+</div>	
+    <div class="elements">
+      <label for="hobby">Hobby :</label>
+      <input type="checkbox" name="hobby[]" value="Sports" id="ch1"> Sports 
+  <input type="checkbox" name="hobby[]" value="Coding"  id="ch2"> Coding 
+   </div>
+   
+    <div class="submit">
+       <input type="submit" id="btn" name="btn" class="btn" value="Submit" />
+    </div>
+  </fieldset>
+</form>
+</body>
+</html>
