@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('#myform').submit(function(event){
+        
+    });
+});
+
+
+
 /* https://jquery.com/
 jQuery är ett snabbt, litet och funktionsrikt JavaScript-bibliotek. 
 Det gör saker som HTML-dokumentgenomgång och manipulering, händelsehantering, 
