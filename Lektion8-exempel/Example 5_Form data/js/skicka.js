@@ -1,6 +1,24 @@
 $(document).ready(function(){
     $('#myform').submit(function(event){
+        event.preventDefault();
         
+        //serialisera form data som JSON
+        let formData = $('#myform').serializeArray();
+        let jsonObject = {};
+        $.each(formData, function(index,element){           //Bygger nyckelvärde par för json
+            jsonObject[element.name] = element.value;
+        });
+
+        let jsonData = JSON.stringify(jsonObject);          //byter typen string
+
+        //spara JSON data till en fil på client
+        let blob = new Blob([jsonData],{type:"application/json;charset=utf-8"});
+        saveAs(blob,"form_data.json")
+
+        alert("Form data saved successfully!"); //meddelande till användare
+
+        $('#myform').reset();       //rensar form
+
     });
 });
 
